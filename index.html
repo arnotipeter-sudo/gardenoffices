@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garden Offices – Bérelhető irodák</title>
+  <meta name="description" content="Kis, hangulatos irodák zöld környezetben – rugalmas bérleti feltételekkel Dunaharasztin.">
+  <style>
+    :root {
+      --bg:#0b1020; --card:#121831; --accent:#78d38a; --text:#eef1f7; --muted:#a8b0c3; --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;line-height:1.6}
+
+    /* KARBAntartás sáv */
+    #maintenance {
+      background:#e53935;
+      color:#fff;
+      text-align:center;
+      padding:12px 10px;
+      font-size:22px;
+      font-weight:800;
+      letter-spacing:0.04em;
+    }
+
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;background:rgba(11,16,32,.7);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0;gap:12px}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text);font-weight:800}
+    .brand img.logo{width:80px;height:80px;border-radius:16px;box-shadow:0 0 0 2px rgba(255,255,255,.18) inset}
+    nav ul{display:flex;gap:10px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:10px}
+    nav a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+
+    /* Itt cseréltem le a hero hátteret az új képre */
+    .hero{padding:64px 0 32px;background:center/cover no-repeat url('office-hero.jpg')}
+    .hero .overlay{background:rgba(11,16,32,.55);border-radius:16px;padding:22px;display:grid;gap:10px}
+    .title{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0}
+    .lead{color:var(--muted);margin:0}
+    .badge{display:inline-flex;gap:8px;align-items:center;background:rgba(120,211,138,.15);border:1px solid rgba(120,211,138,.35);padding:6px 10px;border-radius:999px;font-size:12px}
+    .cta{display:inline-flex;gap:10px;align-items:center;background:var(--accent);color:#0b1020;text-decoration:none;font-weight:800;padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.2)}
+    .cta.secondary{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.18)}
+
+    .section{padding:48px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .card img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+    .card .body{padding:16px}
+    .row{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted)}
+    .price{font-weight:900;font-size:20px}
+
+    .contactbar{display:flex;gap:16px;flex-wrap:wrap;align-items:center;color:var(--text)}
+    .contactbar a{color:var(--text);text-decoration:none}
+    .contactbar a:hover{text-decoration:underline}
+
+    footer{border-top:1px solid rgba(255,255,255,.08);color:var(--muted);padding:24px 0;margin-top:20px}
+    .logos{display:flex;gap:12px;align-items:center}
+    .logos img{width:64px;height:64px;border-radius:14px;box-shadow:0 0 0 2px rgba(255,255,255,.12) inset}
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:600px){
+      .grid{grid-template-columns:1fr}
+      .brand img.logo{width:68px;height:68px}
+      #maintenance{font-size:18px;padding:10px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- IDEIGLENES KARBANTARTÁSI SÁV – ha már nem kell, ezt a blokkot töröld -->
+  <div id="maintenance">⚠️ KARBANTARTÁS ALATT ⚠️</div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <img class="logo" src="logo.svg" alt="Garden Offices logó">
+        <span>Garden Offices</span>
+      </a>
+      <nav aria-label="Fő navigáció">
+        <ul>
+          <li><a href="#irodak">Irodák</a></li>
+          <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
+          <li><a href="#kapcsolat">Kapcsolat</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="hero">
+    <div class="container overlay">
+      <div class="logos">
+        <img src="logo.svg" alt="Garden Offices logó">
+        <img src="logo.png" alt="Garden Offices logó (PNG)">
+      </div>
+      <span class="badge">🌿 Kis, hangulatos irodák zöld környezetben</span>
+      <h1 class="title">Bérelhető irodák – kényelmesen, rugalmasan</h1>
+      <p class="lead">
+        Dunaharaszti, Dózsa György 61. •
+        <a href="tel:+36309425682">+36 30 942 5682</a> •
+        <a href="mailto:arnotipeter@gmail.com">arnotipeter@gmail.com</a>
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
+        <a class="cta" href="#irodak">Szabad irodák</a>
+        <a class="cta secondary" href="#kapcsolat">Ajánlatot kérek</a>
+      </div>
+    </div>
+  </main>
+
+  <section id="irodak" class="section">
+    <div class="container">
+      <h2>Elérhető irodák</h2>
+      <div class="grid">
+        <article class="card" id="platan">
+          <img src="platan.jpg" alt="Platán iroda – Garden Offices">
+          <div class="body">
+            <h3 style="margin:6px 0 8px">Platán iroda</h3>
+            <div class="row"><span>📐 22 m²</span><span>👥 4 fő</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">Világos, bútorozott tér; közös konyha és tárgyaló használat; 24/7 belépés.</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <span class="price">89 000 Ft / hó</span>
+              <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Platán irodára">Érdekel</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="hars">
+          <img src="hars.jpg" alt="Hárs iroda – Garden Offices">
+          <div class="body">
+            <h3 style="margin:6px 0 8px">Hárs iroda</h3>
+            <div class="row"><span>📐 24 m²</span><span>👥 5 fő</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">Közvetlen kertkapcsolat, csendes udvar.</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <span class="price">96 000 Ft / hó</span>
+              <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Hárs irodára">Érdekel</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="bukk">
+          <img src="bukk.jpg" alt="Bükk iroda – Garden Offices">
+          <div class="body">
+            <h3 style="margin:6px 0 8px">Bükk iroda</h3>
+            <div class="row"><span>📐 18 m²</span><span>👥 3 fő</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">Ideális megbeszélésekhez vagy 2–3 fős csapatnak.</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <span class="price">76 000 Ft / hó</span>
+              <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Bükk irodára">Érdekel</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="tolgy">
+          <img src="tolgy.jpg" alt="Tölgy iroda – Garden Offices">
+          <div class="body">
+            <h3 style="margin:6px 0 8px">Tölgy iroda</h3>
+            <div class="row"><span>📐 28 m²</span><span>👥 6 fő</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">Tágas tér csapatmunkához, tárgyalóasztallal.</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <span class="price">112 000 Ft / hó</span>
+              <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Tölgy irodára">Érdekel</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="juhar">
+          <img src="juhar.jpg" alt="Juhar iroda – Garden Offices">
+          <div class="body">
+            <h3 style="margin:6px 0 8px">Juhar iroda</h3>
+            <div class="row"><span>📐 20 m²</span><span>👥 4 fő</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">Világos, több ablakos helyiség.</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <span class="price">84 000 Ft / hó</span>
+              <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Juhar irodára">Érdekel</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="fenyo">
+          <img src="fenyo.jpg" alt="Fenyő iroda – Garden Offices">
+          <div class="body">
+            <h3 style="margin:6px 0 8px">Fenyő iroda</h3>
+            <div class="row"><span>📐 26 m²</span><span>👥 5 fő</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">Utcafronti, váróként is használható tér.</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <span class="price">105 000 Ft / hó</span>
+              <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Fenyő irodára">Érdekel</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="akac">
+          <img src="akac.jpg" alt="Akác iroda – Garden Offices">
+          <div class="body">
+            <h3 style="margin:6px 0 8px">Akác iroda</h3>
+            <div class="row"><span>📐 16 m²</span><span>👥 2–3 fő</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">Zöld falas tárgyaló; csendes, intimebb atmoszféra.</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <span class="price">69 000 Ft / hó</span>
+              <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Akác irodára">Érdekel</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="cseresznye">
+          <img src="cseresznye.jpg" alt="Cseresznye iroda – Garden Offices">
+          <div class="body">
+            <h3 style="margin:6px 0 8px">Cseresznye iroda</h3>
+            <div class="row"><span>📐 30 m²</span><span>👥 6–8 fő</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">Világos, üres tér – igény szerint berendezhető.</p>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <span class="price">125 000 Ft / hó</span>
+              <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Cseresznye irodára">Érdekel</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="szolgaltatasok" class="section">
+    <div class="container">
+      <h2>Mit tartalmaz a bérleti díj?</h2>
+      <div class="grid">
+        <div class="card"><div class="body"><h3>🏢 Bútorozott iroda</h3><p>Íróasztalok, ergonomikus székek, szekrények – azonnal beköltözhető.</p></div></div>
+        <div class="card"><div class="body"><h3>📶 Gyors Wi-Fi</h3><p>Stabil, nagy sávszélességű hálózat vendég-hozzáféréssel.</p></div></div>
+        <div class="card"><div class="body"><h3>☕ Konyha & kávé</h3><p>Prémium kávé és tea, hűtő, mikrohullámú sütő.</p></div></div>
+        <div class="card"><div class="body"><h3>🕒 24/7 hozzáférés</h3><p>Rugalmas nyitvatartás elektronikus beléptetővel.</p></div></div>
+        <div class="card"><div class="body"><h3>🪴 Zöld környezet</h3><p>Kültéri pihenő, természetközeli környezet, jó levegő.</p></div></div>
+        <div class="card"><div class="body"><h3>🧹 Takarítás & rezsi</h3><p>Rezsi, takarítás és közös területek díja benne van.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kapcsolat" class="section">
+    <div class="container">
+      <h2>Kapcsolat</h2>
+
+      <div class="contactbar" style="margin-bottom:12px">
+        <img src="logo.svg" alt="Garden Offices logó" style="width:56px;height:56px;border-radius:12px">
+        <span>Dunaharaszti, Dózsa György 61.</span>
+        <a href="tel:+36309425682">+36 30 942 5682</a>
+        <a href="mailto:arnotipeter@gmail.com">arnotipeter@gmail.com</a>
+      </div>
+
+      <div style="margin-bottom:16px;padding:12px;border-radius:12px;background:rgba(18,24,49,.9);border:1px solid rgba(255,255,255,.12);">
+        <strong>Pallas Magániskola Betéti Társaság</strong><br>
+        2335 Taksony, Széchenyi u. 71.<br>
+        Adószám: 20174666-2-13
+      </div>
+
+      <p class="lead">Írj nekünk, melyik irodánk érdekel, hány főre és mettől meddig bérelnéd.</p>
+
+      <form id="contactForm" style="max-width:600px;display:grid;gap:12px" onsubmit="submitForm(event)">
+        <div>
+          <label for="name" style="color:var(--muted)">Név</label>
+          <input id="name" name="name" required style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:var(--text)">
+        </div>
+        <div>
+          <label for="email" style="color:var(--muted)">E-mail</label>
+          <input id="email" type="email" name="email" required style="width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:var(--text)">
+        </div>
+        <div>
+          <label for="message" style="color:var(--muted)">Üzenet</label>
+          <textarea id="message" name="message" placeholder="Pl.: A Tölgy irodát szeretném megtekinteni jövő héten." required style="width:100%;min-height:120px;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:var(--text)"></textarea>
+        </div>
+        <button class="cta" type="submit">Küldés</button>
+        <p id="formMsg" style="color:var(--muted)"></p>
+      </form>
+      <script>
+        function submitForm(e){
+          e.preventDefault();
+          var name=document.getElementById('name').value.trim();
+          var email=document.getElementById('email').value.trim();
+          var message=document.getElementById('message').value.trim();
+          if(!name||!email||!message){document.getElementById('formMsg').textContent='Kérjük, tölts ki minden mezőt.';return;}
+          document.getElementById('formMsg').textContent='Köszönjük! Üzenetedet rögzítettük (demó).';
+          e.target.reset();
+        }
+      </script>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div class="logos">
+        <img src="logo.svg" alt="Garden Offices logó">
+        <span style="color:var(--muted)">© <span id="year"></span> Garden Offices</span>
+      </div>
+      <div class="contactbar">
+        <span>Pallas Magániskola Bt.</span>
+        <span>2335 Taksony, Széchenyi u. 71.</span>
+        <span>Adószám: 20174666-2-13</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
