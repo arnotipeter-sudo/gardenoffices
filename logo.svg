@@ -1,8 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
-  <rect x="10" y="10" width="200" height="200" rx="32" fill="#0b1020" stroke="#6ea8fe" stroke-opacity="0.35"/>
-  <path d="M60 120 L110 80 L160 120 V170 H60 Z" fill="#121831" stroke="#a7c9ff" stroke-width="3"/>
-  <rect x="90" y="135" width="30" height="35" rx="4" fill="#0b1020" stroke="#a7c9ff" stroke-width="2"/>
-  <path d="M150 65 C175 65 185 85 185 100 C165 102 145 95 150 65 Z" fill="#78d38a"/>
-  <circle cx="110" cy="50" r="6" fill="#78d38a"/>
-  <text x="110" y="192" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle" fill="#eef1f7">Garden Offices</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="houseWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd666"/>
+      <stop offset="100%" stop-color="#f4b321"/>
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e38a1b"/>
+      <stop offset="100%" stop-color="#c46a12"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#74c88a"/>
+      <stop offset="100%" stop-color="#2f8b57"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="80" cy="80" r="74" fill="#0b1020"/>
+  <circle cx="80" cy="80" r="70" fill="#141b33"/>
+
+  <!-- Leaves around the house -->
+  <path d="M20 72 C34 62, 46 62, 54 70 C40 78, 30 86, 20 72 Z" fill="url(#leafGrad)"/>
+  <path d="M106 40 C118 30, 135 32, 142 44 C130 50, 118 56, 106 40 Z" fill="url(#leafGrad)"/>
+  <path d="M32 108 C46 102, 60 104, 68 114 C56 118, 44 122, 32 108 Z" fill="url(#leafGrad)"/>
+  <path d="M104 116 C118 108, 134 110, 142 122 C130 128, 118 132, 104 116 Z" fill="url(#leafGrad)"/>
+
+  <!-- House body -->
+  <rect x="42" y="66" width="76" height="52" rx="4" fill="url(#houseWall)" stroke="#8a5a16" stroke-width="2"/>
+  <!-- Roof -->
+  <polygon points="36,66 80,36 124,66" fill="url(#roofGrad)" stroke="#8a3e0c" stroke-width="2"/>
+
+  <!-- Door -->
+  <rect x="72" y="86" width="18" height="32" rx="2" fill="#d1862d" stroke="#8a4b12" stroke-width="2"/>
+  <circle cx="86" cy="102" r="1.6" fill="#f8e3c0"/>
+
+  <!-- Windows -->
+  <rect x="50" y="80" width="14" height="12" rx="1.5" fill="#f8f8ff" stroke="#c48b2b" stroke-width="1.5"/>
+  <line x1="57" y1="80" x2="57" y2="92" stroke="#c48b2b" stroke-width="1.2"/>
+  <line x1="50" y1="86" x2="64" y2="86" stroke="#c48b2b" stroke-width="1.2"/>
+
+  <rect x="96" y="80" width="14" height="12" rx="1.5" fill="#f8f8ff" stroke="#c48b2b" stroke-width="1.5"/>
+  <line x1="103" y1="80" x2="103" y2="92" stroke="#c48b2b" stroke-width="1.2"/>
+  <line x1="96" y1="86" x2="110" y2="86" stroke="#c48b2b" stroke-width="1.2"/>
+
+  <!-- Base -->
+  <rect x="34" y="116" width="92" height="6" rx="3" fill="#202845"/>
 </svg>
