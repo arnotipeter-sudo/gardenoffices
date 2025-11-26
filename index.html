@@ -158,6 +158,17 @@
       object-fit:cover;
       display:block;
     }
+    .photos{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:6px;
+    }
+    .photos img{
+      width:100%;
+      aspect-ratio:3/2;
+      object-fit:cover;
+      display:block;
+    }
     .card .body{padding:16px}
     .row{
       display:flex;
@@ -226,6 +237,7 @@
       <nav aria-label="Fő navigáció">
         <ul>
           <li><a href="#irodak">Irodák</a></li>
+          <li><a href="#galeria">Galéria</a></li>
           <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
           <li><a href="#kapcsolat">Kapcsolat</a></li>
         </ul>
@@ -255,11 +267,18 @@
       <h2>Elérhető irodák</h2>
       <div class="grid">
         <article class="card" id="platan">
-          <img src="platan.jpg" alt="Platán iroda – Garden Offices">
+          <div class="photos">
+            <img src="platan1.jpg" alt="Platán iroda 1">
+            <img src="platan2.jpg" alt="Platán iroda 2">
+            <img src="platan3.jpg" alt="Platán iroda 3">
+          </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Platán iroda</h3>
-            <div class="row"><span>📐 22 m²</span><span>👥 4 fő</span></div>
-            <p style="margin:8px 0 10px;color:var(--muted)">Világos, bútorozott tér; közös konyha és tárgyaló használat; 24/7 belépés.</p>
+            <div class="row"><span>📐 20 m²</span><span>👥 12 fő</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">
+              Platán 20nm, 12 fő, Utcai tájolású, különbejáratú, légkondicionált nagy iroda.
+              Mosdó használat, wifi, takarítás, recepció használat, közös konyhasarok.
+            </p>
             <div style="display:flex;align-items:center;justify-content:space-between">
               <span class="price">89 000 Ft / hó</span>
               <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Platán irodára">Érdekel</a>
@@ -268,11 +287,19 @@
         </article>
 
         <article class="card" id="hars">
-          <img src="hars.jpg" alt="Hárs iroda – Garden Offices">
+          <div class="photos">
+            <img src="hars1.jpg" alt="Hárs iroda 1">
+            <img src="hars2.jpg" alt="Hárs iroda 2">
+            <img src="hars3.jpg" alt="Hárs iroda 3">
+          </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Hárs iroda</h3>
-            <div class="row"><span>📐 24 m²</span><span>👥 5 fő</span></div>
-            <p style="margin:8px 0 10px;color:var(--muted)">Közvetlen kertkapcsolat, csendes udvar.</p>
+            <div class="row"><span>📐 18 m²</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">
+              Hárs 18 nm, Közvetlenül a Dózsa György útra nyíló, légkondicionált üzlethelyiség.
+              Vízvételi lehetőség, utcai portál, reklám kihelyezése lehetséges. Mosdó használat, wifi, takarítás,
+              recepció használat, közös konyhasarok. Igény esetén külön raktárhelyiséget is tudunk biztosítani.
+            </p>
             <div style="display:flex;align-items:center;justify-content:space-between">
               <span class="price">96 000 Ft / hó</span>
               <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Hárs irodára">Érdekel</a>
@@ -281,11 +308,18 @@
         </article>
 
         <article class="card" id="bukk">
-          <img src="bukk.jpg" alt="Bükk iroda – Garden Offices">
+          <div class="photos">
+            <img src="bukk1.jpg" alt="Bükk iroda 1">
+            <img src="bukk2.jpg" alt="Bükk iroda 2">
+            <img src="bukk3.jpg" alt="Bükk iroda 3">
+          </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Bükk iroda</h3>
-            <div class="row"><span>📐 18 m²</span><span>👥 3 fő</span></div>
-            <p style="margin:8px 0 10px;color:var(--muted)">Ideális megbeszélésekhez vagy 2–3 fős csapatnak.</p>
+            <div class="row"><span>📐 25 m²</span><span>👥 15 fő</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">
+              Bükk 25 nm, akár 15 fős ültetett rendezvényre alkalmas. Székeket, asztalokat igény szerint tudunk biztosítani.
+              Mosdó használat, wifi, takarítás, közös konyhasarok.
+            </p>
             <div style="display:flex;align-items:center;justify-content:space-between">
               <span class="price">76 000 Ft / hó</span>
               <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Bükk irodára">Érdekel</a>
@@ -294,11 +328,18 @@
         </article>
 
         <article class="card" id="tolgy">
-          <img src="tolgy.jpg" alt="Tölgy iroda – Garden Offices">
+          <div class="photos">
+            <img src="tolgy1.jpg" alt="Tölgy iroda 1">
+            <img src="tolgy2.jpg" alt="Tölgy iroda 2">
+            <img src="tolgy3.jpg" alt="Tölgy iroda 3">
+          </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Tölgy iroda</h3>
-            <div class="row"><span>📐 28 m²</span><span>👥 6 fő</span></div>
-            <p style="margin:8px 0 10px;color:var(--muted)">Tágas tér csapatmunkához, tárgyalóasztallal.</p>
+            <div class="row"><span>📐 14 m²</span><span>👥 4 fő</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">
+              Tölgy 14 nm, 4 fő, közvetlenül a belső kertre nyíló, világos iroda, légkondicionált, teljesen szeparált.
+              Mosdó használat, wifi, takarítás, recepció használat, közös konyhasarok.
+            </p>
             <div style="display:flex;align-items:center;justify-content:space-between">
               <span class="price">112 000 Ft / hó</span>
               <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Tölgy irodára">Érdekel</a>
@@ -307,11 +348,17 @@
         </article>
 
         <article class="card" id="juhar">
-          <img src="juhar.jpg" alt="Juhar iroda – Garden Offices">
+          <div class="photos">
+            <img src="juhar1.jpg" alt="Juhar iroda 1">
+            <img src="juhar2.jpg" alt="Juhar iroda 2">
+            <img src="juhar3.jpg" alt="Juhar iroda 3">
+          </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Juhar iroda</h3>
-            <div class="row"><span>📐 20 m²</span><span>👥 4 fő</span></div>
-            <p style="margin:8px 0 10px;color:var(--muted)">Világos, több ablakos helyiség.</p>
+            <div class="row"><span>ℹ️ Hamarosan elérhető</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">
+              Juhar – Hamarosan
+            </p>
             <div style="display:flex;align-items:center;justify-content:space-between">
               <span class="price">84 000 Ft / hó</span>
               <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Juhar irodára">Érdekel</a>
@@ -320,11 +367,17 @@
         </article>
 
         <article class="card" id="fenyo">
-          <img src="fenyo.jpg" alt="Fenyő iroda – Garden Offices">
+          <div class="photos">
+            <img src="fenyo1.jpg" alt="Fenyő iroda 1">
+            <img src="fenyo2.jpg" alt="Fenyő iroda 2">
+            <img src="fenyo3.jpg" alt="Fenyő iroda 3">
+          </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Fenyő iroda</h3>
-            <div class="row"><span>📐 26 m²</span><span>👥 5 fő</span></div>
-            <p style="margin:8px 0 10px;color:var(--muted)">Utcafronti, váróként is használható tér.</p>
+            <div class="row"><span>ℹ️ Hamarosan elérhető</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">
+              Fenyő – Hamarosan
+            </p>
             <div style="display:flex;align-items:center;justify-content:space-between">
               <span class="price">105 000 Ft / hó</span>
               <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Fenyő irodára">Érdekel</a>
@@ -333,11 +386,18 @@
         </article>
 
         <article class="card" id="akac">
-          <img src="akac.jpg" alt="Akác iroda – Garden Offices">
+          <div class="photos">
+            <img src="akac1.jpg" alt="Akác iroda 1">
+            <img src="akac2.jpg" alt="Akác iroda 2">
+            <img src="akac3.jpg" alt="Akác iroda 3">
+          </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Akác iroda</h3>
-            <div class="row"><span>📐 16 m²</span><span>👥 2–3 fő</span></div>
-            <p style="margin:8px 0 10px;color:var(--muted)">Zöld falas tárgyaló; csendes, intimebb atmoszféra.</p>
+            <div class="row"><span>📐 12 m²</span><span>👥 2–3 fő</span></div>
+            <p style="margin:8px 0 10px;color:var(--muted)">
+              Akác 12 nm, 2–3 fő, önálló, a kertből megközelíthető napfényes kis iroda,
+              elektromos fűtéssel, fapadlóval, igény esetén bútorozottan.
+            </p>
             <div style="display:flex;align-items:center;justify-content:space-between">
               <span class="price">69 000 Ft / hó</span>
               <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Akác irodára">Érdekel</a>
@@ -345,18 +405,24 @@
           </div>
         </article>
 
-        <article class="card" id="cseresznye">
-          <img src="cseresznye.jpg" alt="Cseresznye iroda – Garden Offices">
-          <div class="body">
-            <h3 style="margin:6px 0 8px">Cseresznye iroda</h3>
-            <div class="row"><span>📐 30 m²</span><span>👥 6–8 fő</span></div>
-            <p style="margin:8px 0 10px;color:var(--muted)">Világos, üres tér – igény szerint berendezhető.</p>
-            <div style="display:flex;align-items:center;justify-content:space-between">
-              <span class="price">125 000 Ft / hó</span>
-              <a class="cta" href="#kapcsolat" aria-label="Kapcsolatfelvétel Cseresznye irodára">Érdekel</a>
-            </div>
-          </div>
-        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="section">
+    <div class="container">
+      <h2>Galéria</h2>
+      <div class="photos">
+        <img src="galeria1.jpg" alt="Galéria kép 1">
+        <img src="galeria2.jpg" alt="Galéria kép 2">
+        <img src="galeria3.jpg" alt="Galéria kép 3">
+        <img src="galeria4.jpg" alt="Galéria kép 4">
+        <img src="galeria5.jpg" alt="Galéria kép 5">
+        <img src="galeria6.jpg" alt="Galéria kép 6">
+        <img src="galeria7.jpg" alt="Galéria kép 7">
+        <img src="galeria8.jpg" alt="Galéria kép 8">
+        <img src="galeria9.jpg" alt="Galéria kép 9">
+        <img src="galeria10.jpg" alt="Galéria kép 10">
       </div>
     </div>
   </section>
@@ -422,3 +488,4 @@
   </script>
 </body>
 </html>
+
