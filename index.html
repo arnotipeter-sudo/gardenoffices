@@ -404,6 +404,25 @@ img[onclick]{
 }
 
 
+
+    /* Mobilos stabilitás és érintésbarát vezérlés */
+    html, body { max-width: 100%; overflow-x: hidden; }
+    img { max-width: 100%; }
+
+    @media (max-width: 760px) {
+      nav a, .cta { min-height: 44px; }
+      .card { min-width: 0; }
+      .card .body, .card .body * { overflow-wrap: anywhere; }
+      .photos img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+      #galeria .photos img { aspect-ratio: 1 / 1; }
+    }
+
+    @media (max-width: 420px) {
+      .hero .overlay { padding: 16px 14px; }
+      .card .body { padding: 14px 12px; }
+      .contactbar a { overflow-wrap: anywhere; }
+    }
+
 </style>
 
   <!-- Google tag (gtag.js) -->
@@ -456,9 +475,9 @@ img[onclick]{
       <div class="grid offices">
         <article class="card" id="platan">
           <div class="photos">
-            <img src="platan1.jpg" alt="Platán iroda 1" onclick="openLightbox(this.src)">
-            <img src="platan2.jpg" alt="Platán iroda 2" onclick="openLightbox(this.src)">
-            <img src="platan3.jpg" alt="Platán iroda 3" onclick="openLightbox(this.src)">
+            <img src="platan1.jpg" alt="Platán iroda 1" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="platan2.jpg" alt="Platán iroda 2" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="platan3.jpg" alt="Platán iroda 3" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
           </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Platán iroda</h3>
@@ -477,9 +496,9 @@ img[onclick]{
         </article>
         <article class="card" id="hars">
           <div class="photos">
-            <img src="hars1.jpg" alt="Hárs iroda 1" onclick="openLightbox(this.src)">
-            <img src="hars2.jpg" alt="Hárs iroda 2" onclick="openLightbox(this.src)">
-            <img src="hars3.jpg" alt="Hárs iroda 3" onclick="openLightbox(this.src)">
+            <img src="hars1.jpg" alt="Hárs iroda 1" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="hars2.jpg" alt="Hárs iroda 2" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="hars3.jpg" alt="Hárs iroda 3" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
           </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Hárs iroda/üzlethelyiség</h3>
@@ -500,9 +519,9 @@ img[onclick]{
         </article>
         <article class="card" id="bukk">
           <div class="photos">
-            <img src="bukk1.jpg" alt="Bükk helyiség 1" onclick="openLightbox(this.src)">
-            <img src="bukk2.jpg" alt="Bükk helyiség 2" onclick="openLightbox(this.src)">
-            <img src="bukk3.jpg" alt="Bükk helyiség 3" onclick="openLightbox(this.src)">
+            <img src="bukk1.jpg" alt="Bükk helyiség 1" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="bukk2.jpg" alt="Bükk helyiség 2" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="bukk3.jpg" alt="Bükk helyiség 3" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
           </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Bükk helyiség</h3>
@@ -522,9 +541,9 @@ img[onclick]{
         </article>
         <article class="card" id="tolgy">
           <div class="photos">
-            <img src="tolgy1.jpg" alt="Tölgy iroda 1" onclick="openLightbox(this.src)">
-            <img src="tolgy2.jpg" alt="Tölgy iroda 2" onclick="openLightbox(this.src)">
-            <img src="tolgy3.jpg" alt="Tölgy iroda 3" onclick="openLightbox(this.src)">
+            <img src="tolgy1.jpg" alt="Tölgy iroda 1" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="tolgy2.jpg" alt="Tölgy iroda 2" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="tolgy3.jpg" alt="Tölgy iroda 3" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
           </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Tölgy iroda</h3>
@@ -543,9 +562,9 @@ img[onclick]{
         </article>
         <article class="card" id="juhar">
           <div class="photos">
-            <img src="juhar1.jpg" alt="Juhar iroda 1" onclick="openLightbox(this.src)">
-            <img src="juhar2.jpg" alt="Juhar iroda 2" onclick="openLightbox(this.src)">
-            <img src="juhar3.jpg" alt="Juhar iroda 3" onclick="openLightbox(this.src)">
+            <img src="juhar1.jpg" alt="Juhar iroda 1" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="juhar2.jpg" alt="Juhar iroda 2" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="juhar3.jpg" alt="Juhar iroda 3" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
           </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Juhar iroda</h3>
@@ -560,9 +579,9 @@ img[onclick]{
         </article>
         <article class="card" id="fenyo">
           <div class="photos">
-            <img src="fenyo1.jpg" alt="Fenyő iroda 1" onclick="openLightbox(this.src)">
-            <img src="fenyo2.jpg" alt="Fenyő iroda 2" onclick="openLightbox(this.src)">
-            <img src="fenyo3.jpg" alt="Fenyő iroda 3" onclick="openLightbox(this.src)">
+            <img src="fenyo1.jpg" alt="Fenyő iroda 1" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="fenyo2.jpg" alt="Fenyő iroda 2" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="fenyo3.jpg" alt="Fenyő iroda 3" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
           </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Fenyő iroda</h3>
@@ -578,9 +597,9 @@ img[onclick]{
         </article>
         <article class="card" id="akac">
           <div class="photos">
-            <img src="akac1.jpg" alt="Akác iroda 1" onclick="openLightbox(this.src)">
-            <img src="akac2.jpg" alt="Akác iroda 2" onclick="openLightbox(this.src)">
-            <img src="akac3.jpg" alt="Akác iroda 3" onclick="openLightbox(this.src)">
+            <img src="akac1.jpg" alt="Akác iroda 1" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="akac2.jpg" alt="Akác iroda 2" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="akac3.jpg" alt="Akác iroda 3" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
           </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Akác iroda</h3>
@@ -599,9 +618,9 @@ img[onclick]{
         </article>
         <article class="card" id="cseresznye">
           <div class="photos">
-            <img src="cseresznye1.jpg" alt="Cseresznye iroda 1" onclick="openLightbox(this.src)">
-            <img src="cseresznye2.jpg" alt="Cseresznye iroda 2" onclick="openLightbox(this.src)">
-            <img src="cseresznye3.jpg" alt="Cseresznye iroda 3" onclick="openLightbox(this.src)">
+            <img src="cseresznye1.jpg" alt="Cseresznye iroda 1" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="cseresznye2.jpg" alt="Cseresznye iroda 2" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+            <img src="cseresznye3.jpg" alt="Cseresznye iroda 3" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
           </div>
           <div class="body">
             <h3 style="margin:6px 0 8px">Cseresznye iroda</h3>
@@ -626,21 +645,21 @@ img[onclick]{
     <div class="container">
       <h2>Galéria</h2>
       <div class="photos">
-        <img src="galeria1.jpg" alt="Galéria kép 1" onclick="openLightbox(this.src)">
-        <img src="galeria2.jpg" alt="Galéria kép 2" onclick="openLightbox(this.src)">
-        <img src="galeria3.jpg" alt="Galéria kép 3" onclick="openLightbox(this.src)">
-        <img src="galeria4.jpg" alt="Galéria kép 4" onclick="openLightbox(this.src)">
-        <img src="galeria5.jpg" alt="Galéria kép 5" onclick="openLightbox(this.src)">
-        <img src="galeria6.jpg" alt="Galéria kép 6" onclick="openLightbox(this.src)">
-        <img src="galeria7.jpg" alt="Galéria kép 7" onclick="openLightbox(this.src)">
-        <img src="galeria8.jpg" alt="Galéria kép 8" onclick="openLightbox(this.src)">
-        <img src="galeria9.jpg" alt="Galéria kép 9" onclick="openLightbox(this.src)">
-        <img src="galeria10.jpg" alt="Galéria kép 10" onclick="openLightbox(this.src)">
-        <img src="galeria11.jpg" alt="Galéria kép 11" onclick="openLightbox(this.src)">
-        <img src="galeria12.jpg" alt="Galéria kép 12" onclick="openLightbox(this.src)">
-        <img src="galeria13.jpg" alt="Galéria kép 12" onclick="openLightbox(this.src)">
-        <img src="galeria14.jpg" alt="Galéria kép 12" onclick="openLightbox(this.src)">
-        <img src="galeria15.jpg" alt="Galéria kép 12" onclick="openLightbox(this.src)">
+        <img src="galeria1.jpg" alt="Galéria kép 1" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria2.jpg" alt="Galéria kép 2" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria3.jpg" alt="Galéria kép 3" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria4.jpg" alt="Galéria kép 4" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria5.jpg" alt="Galéria kép 5" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria6.jpg" alt="Galéria kép 6" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria7.jpg" alt="Galéria kép 7" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria8.jpg" alt="Galéria kép 8" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria9.jpg" alt="Galéria kép 9" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria10.jpg" alt="Galéria kép 10" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria11.jpg" alt="Galéria kép 11" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria12.jpg" alt="Galéria kép 12" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria13.jpg" alt="Galéria kép 12" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria14.jpg" alt="Galéria kép 12" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
+        <img src="galeria15.jpg" alt="Galéria kép 12" onclick="openLightbox(this.src)" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -754,7 +773,7 @@ webstatisztika" href="https://www.statcounter.hu/"
 target="_blank"><img class="statcounter"
 src="https://c.statcounter.com/13186651/0/909e37fc/1/"
 alt="ingyenes webstatisztika"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+referrerPolicy="no-referrer-when-downgrade" loading="lazy" decoding="async"></a></div></noscript>
 <!-- End of Statcounter Code -->
 </body>
 </html>
