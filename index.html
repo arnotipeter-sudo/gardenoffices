@@ -204,6 +204,37 @@
     .status-unavailable{
       color:#ff4d4d;
     }
+    .faq-list{
+      display:grid;
+      gap:10px;
+      max-width:900px;
+    }
+    .faq-item{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:12px;
+      padding:0 18px;
+      box-shadow:var(--shadow);
+    }
+    .faq-item summary{
+      cursor:pointer;
+      font-weight:750;
+      padding:16px 28px 16px 0;
+      position:relative;
+      list-style:none;
+    }
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary::after{
+      content:"+";
+      position:absolute;
+      right:0;
+      top:12px;
+      font-size:24px;
+      color:var(--accent);
+    }
+    .faq-item[open] summary::after{content:"−"}
+    .faq-item p{color:var(--muted);margin:0 0 16px}
+    .faq-item a{color:var(--accent)}
     .contactbar{
       display:flex;
       gap:16px;
@@ -464,6 +495,7 @@ img[onclick]{
           <li><a href="#irodak">Helyiségek</a></li>
           <li><a href="#galeria">Galéria</a></li>
           <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
+          <li><a href="#gyik">GYIK</a></li>
           <li><a href="#kapcsolat">Kapcsolat</a></li>
         </ul>
       </nav>
@@ -722,6 +754,74 @@ img[onclick]{
         <div class="card"><div class="body"><p>Kerékpár-tároló</p></div></div>
         <div class="card"><div class="body"><p>Árnyas kerti üldögélő hely a pihentető munkaszünetért</p></div></div>
         <div class="card"><div class="body"><p>A Juhar kizárólagos bérlete esetén 24/7 hozzáférés</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section id="gyik" class="section">
+    <div class="container">
+      <h2>Gyakran ismételt kérdések</h2>
+      <p class="lead" style="margin-bottom:20px">A legfontosabb tudnivalók a Garden Offices helyiségeinek bérléséről.</p>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>1. Milyen célra bérelhetők a helyiségek?</summary>
+          <p>Helyiségeink alkalmasak irodai munkára, üzlethelyiségnek, oktatási tevékenységre, workshopok tartására, valamint egészség- és jólléti szolgáltatásokra.</p>
+        </details>
+        <details class="faq-item">
+          <summary>2. Lehet óradíjas konstrukcióban is bérelni?</summary>
+          <p>Igen. Az Akác és a Tölgy helyiség óradíjas bérlésre is elérhető, a Bükk pedig alkalmi bérleti konstrukcióban bérelhető. A Tölgy délután és hétvégén használható. Az aktuális lehetőségekről érdeklődjön nálunk.</p>
+        </details>
+        <details class="faq-item">
+          <summary>3. Mennyibe kerül a bérlés?</summary>
+          <p>Az óradíjak helyiségtől függően 3 500 Ft/óra vagy 5 500 Ft/óra. A Juhar kizárólagos bérleti díja 105 000 Ft/hó, amelyhez 15 000 Ft/hó rezsiköltség társul.</p>
+        </details>
+        <details class="faq-item">
+          <summary>4. Mikor használható a bérelt helyiség?</summary>
+          <p>A Juhar kizárólagos bérlete esetén a hozzáférés napi 24 órában, a hét minden napján biztosított. Az alkalmi bérlés időpontjait előzetesen egyeztetjük.</p>
+        </details>
+        <details class="faq-item">
+          <summary>5. Milyen szolgáltatások állnak rendelkezésre?</summary>
+          <p>A bérlők számára wifi, mosdóhasználat, közös konyhasarok kávéfőzővel, hűtőszekrény, mikrohullámú sütő és recepciós helyiség áll rendelkezésre. Wifis nyomtató is használható.</p>
+        </details>
+        <details class="faq-item">
+          <summary>6. Bútorozottan is bérelhetők a helyiségek?</summary>
+          <p>Igen, igény szerint bútorozott vagy bútorozatlan helyiség is választható. Az adott helyiség berendezéséről érdeklődjön a kapcsolatfelvételkor.</p>
+        </details>
+        <details class="faq-item">
+          <summary>7. Hány fő számára alkalmasak a helyiségek?</summary>
+          <p>A helyiségek mérettől függően különböző létszámra alkalmasak: a kisebb helyiségek jellemzően 2–3 fősek, a Bükk pedig akár 15 fő befogadására is alkalmas.</p>
+        </details>
+        <details class="faq-item">
+          <summary>8. Hol található a Garden Offices?</summary>
+          <p>Dunaharasztin, a Dózsa György út 61. szám alatt. A weboldal „Helyiségek elhelyezkedése” részében alaprajz is segíti a tájékozódást.</p>
+        </details>
+        <details class="faq-item">
+          <summary>9. Meg lehet tekinteni a helyiségeket bérlés előtt?</summary>
+          <p>Igen, megtekintés egyeztetéséhez keressen minket telefonon vagy e-mailben.</p>
+        </details>
+        <details class="faq-item">
+          <summary>10. Hogyan lehet érdeklődni vagy ajánlatot kérni?</summary>
+          <p>Telefonon a <a href="tel:+36309425682">+36 30 942 5682</a> számon vagy e-mailben az <a href="mailto:arnotipeter@gmail.com">arnotipeter@gmail.com</a> címen.</p>
+        </details>
+        <details class="faq-item">
+          <summary>11. Van minimális bérlési idő vagy óraszám?</summary>
+          <p>A havi bérleti konstrukcióban minimum 6 hónapra kötünk szerződést.</p>
+        </details>
+        <details class="faq-item">
+          <summary>12. Hogyan történik a foglalás és a fizetés?</summary>
+          <p>A havi bérleti szerződés megkötésekor 2 havi kauciót és az aktuális bérleti díjat kell fizetni. A felmondási idő 1 hónap.</p>
+        </details>
+        <details class="faq-item">
+          <summary>13. Az óradíjak tartalmazzák a rezsit és minden egyéb költséget?</summary>
+          <p>Igen, az óradíj minden költséget tartalmaz.</p>
+        </details>
+        <details class="faq-item">
+          <summary>14. Lehet rendszeresen, például minden héten ugyanabban az időpontban bérelni?</summary>
+          <p>Igen, erre is van lehetőség. Kérjük, érdeklődjön e-mailben az <a href="mailto:arnotipeter@gmail.com">arnotipeter@gmail.com</a> címen.</p>
+        </details>
+        <details class="faq-item">
+          <summary>15. Van parkolási lehetőség az épületnél?</summary>
+          <p>Igen, az épület előtt több ingyenes parkolóhely áll rendelkezésre.</p>
+        </details>
       </div>
     </div>
   </section>
